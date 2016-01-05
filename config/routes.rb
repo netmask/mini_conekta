@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'payments/create'
-
   get 'founding_source/create'
 
   # The priority is based upon order of creation: first created -> highest priority.
