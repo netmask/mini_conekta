@@ -17,8 +17,6 @@ class PaymentsController < ApplicationController
 
   private
 
-  private
-
   def payment_params
     params.require(:payment).permit(:amount, :token)
   end
