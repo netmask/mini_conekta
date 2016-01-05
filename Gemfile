@@ -30,6 +30,8 @@ gem 'mongoid', '~> 5.0.0'
 gem 'redis'
 gem 'puma'
 
+gem 'attr_encrypted'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
