@@ -32,6 +32,7 @@ gem 'puma'
 
 gem 'attr_encrypted'
 
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -43,6 +44,7 @@ group :development, :test do
   gem 'byebug'
   gem 'awesome_print'
   gem 'rspec-rails'
+  gem 'capistrano-rails', '~> 1.1'
 end
 
 group :development do
