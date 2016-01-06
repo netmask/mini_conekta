@@ -2,7 +2,7 @@ class SecureVault
   attr_accessor :redis
 
   def self.redis
-    Redis.new(port: 26379)
+    Redis.new(:sentinels => [{:host => '127.0.0.1', :port => 26379}], :role => :master)
   end
 
   def self.store(token)
