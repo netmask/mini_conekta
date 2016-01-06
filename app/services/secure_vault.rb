@@ -9,7 +9,7 @@ class SecureVault
 
   def self.store(token)
     redis.set token.id, token.encrypted_payload
-    redis.expire token.id, 10
+    redis.expire token.id, 600
   end
 
   def self.retrieve(token_id)
