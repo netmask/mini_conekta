@@ -8,6 +8,6 @@ class Tokeniser
 
   def self.exchange(secure_token_id)
     secure_token = SecureVault.retrieve(secure_token_id)
-    FundingSource.new(JSON.parse(secure_token.payload))
+    FundingSource.new(JSON.parse(secure_token.payload)) if secure_token
   end
 end

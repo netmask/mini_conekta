@@ -8,10 +8,10 @@ class PaymentsController < ApplicationController
     payment = Payment.new payment_params
     gateway = BogusGateway.new
 
-    if gateway.process payment
+    if gateway.process(payment)
       render :json => payment
     else
-      render :json => { :error => gateway.messages }, :status => 422
+      render :json => { :error => gateway.message }, :status => 500
     end
   end
 

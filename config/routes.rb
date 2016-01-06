@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'tpv#index'
 
-  resources :funding_sources, only: [:create, :index]
-  resources :payments, only: [:create]
+  resources :funding_sources, only: [:create]
+  resources :payments, only: [:create, :index]
 end

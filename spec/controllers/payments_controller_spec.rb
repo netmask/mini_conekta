@@ -13,9 +13,19 @@ RSpec.describe PaymentsController, type: :controller do
 
     let(:token) { Tokeniser.create funding_source }
 
-    it 'returns http success' do
-      post :create, payment: {amount: 100, token: token.id}
-      expect(response).to have_http_status(:success)
+
+    context 'a valid token is provided' do
+      it 'returns http success' do
+        post :create, payment: {amount: 100, token: token.id}
+        expect(response).to have_http_status(:success)
+      end
+    end
+
+    context 'a invalid token is provided' do
+      it 'returns http error' do
+        post :create, payment: {amount: 100, token: 'invalid'}
+        expect(response).to have_http_status(:error)
+      end
     end
   end
 

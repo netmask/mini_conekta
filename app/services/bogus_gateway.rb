@@ -1,8 +1,15 @@
 class BogusGateway
+
+  attr_accessor :message
+
   def process(payment)
-    funding_source = Tokeniser.exchange(payment.token)
-    payment.assign_attributes stripe_information(payment, funding_source)
-    payment.save
+    if(funding_source = Tokeniser.exchange(payment.token))
+      payment.assign_attributes stripe_information(payment, funding_source)
+      payment.save
+    else
+      self.message = 'Your token as expired or is invalid'
+      false #maybe an a exception ? :/
+    end
   end
 
 
