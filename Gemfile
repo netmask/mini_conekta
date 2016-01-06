@@ -46,9 +46,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano3-puma'
-  gem 'capistrano-rvm'
+
 
 end
+
+gem 'capistrano-rvm'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
