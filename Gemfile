@@ -45,6 +45,9 @@ group :development, :test do
   gem 'awesome_print'
   gem 'rspec-rails'
   gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rvm'
+
 end
 
 group :development do
