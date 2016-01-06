@@ -1,8 +1,10 @@
 class SecureVault
   attr_accessor :redis
 
+  SENTINELS = [{:host => '127.0.0.1', :port => 26379}]
+
   def self.redis
-    Redis.new
+    Rails.env.production? ? Redis.new(:url => 'redis://mymaster', :sentinels => SENTINELS, :role => :master) : Redis.new
   end
 
   def self.store(token)

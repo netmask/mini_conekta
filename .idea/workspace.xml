@@ -80,8 +80,8 @@
       <file leaf-file-name="secure_vault.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/secure_vault.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.086845465">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.1302682">
+              <caret line="6" column="120" selection-start-line="6" selection-start-column="120" selection-end-line="6" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -828,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/secure_vault.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.086845465">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.1302682">
+          <caret line="6" column="120" selection-start-line="6" selection-start-column="120" selection-end-line="6" selection-end-column="120" />
           <folding />
         </state>
       </provider>
